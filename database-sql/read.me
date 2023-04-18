@@ -1,0 +1,13 @@
+Working with the database
+
+Schematically, work with the database may look like this:
+
+1. make a connection to the database (connect() call with getting a connection object)
+2. Creating one or more cursors (calling the cursor() method with 
+obtaining a cursor object)
+Executing a command or a query (executing the execute() method or its variants)
+4. Retrieving query results (fetchone() method call or its variants)
+5. Exiting a transaction or rolling it back (calling the commit() or
+rollback())
+6. When all transactions have been completed, connection is closed by calling 
+closing() method of a connection object
